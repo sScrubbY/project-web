@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock %}
+{% block title %}HomePage{% endblock %}
+{% block content %}
+<h1>Homepage</h1>
+<h6>Opzoek naar een Bungelow?  Dan ben je op je juiste adres. Bungelowparken zijn <br>ideaal als je er met het hele gezin tussenuit wilt. De mooiste plekken met<br> allerlij leuke facaliteiten/ activiteiten op loopafstand. Of kom tot rust in je bungelow, geniet<br> van een zwembad en neem een lekker hapje bij de locale restaurantjes.  </h6>
+<p> </p>
+<div class="row">
+    <div class="column">
+        <img src="{{ huis1 }}" width="100%" height="400;">
+    </div>	
+    <div class="column">
+        <img src="{{ huis2 }}" width="100%" height="400;">
+    </div>	
+    <div class="column">
+        <img src="{{ huis3 }}" width="100%" height="400;">
+    </div>
+</div>
+</div>
+<div class="row"> 
+<div class="column">
+    <h5>4 persoons bungalow A23</h5>
+    <p>•	knus vakantiehuis in de bossen<br>•	huisdieren toegestaan<br>• Prijs 167,- per week </p>
+</div>
+<div class="column">
+    <h5>4 persoons bungalow A36</h5>
+    <p>•	sfeervol vakantiehuis<br>•	huisdieren niet toegestaan<br>• Prijs 154,- per week </p>
+</div>
+<div class="column">
+    <h5>6 persoons bungalow B07</h5>
+    <p>•	ruime bungalow<br>•	huisdieren toegestaan<br>• Prijs 232,- per week </p>
+   </div>
+</div>
+<div class="row"> 
+<div class="column">
+     <a href="{{url_for('contact')}}">
+      <button>Reseveren</button>
+      </a>
+</div>
+<div class="column">
+    <a href="{{url_for('contact')}}">
+     <button>Reseveren</button>
+     </a>
+</div>
+<div class="column">
+    <a href="{{url_for('contact')}}">
+     <button>Reseveren</button>
+     </a>
+   </div>
+</div>
+<p> <br> </p>
+<div class="row2">
+  <div class="column">
+      <img src="{{ huis4 }}" width="100%" height="400;">
+  </div>  
+  <div class="column">
+      <img src="{{ huis5 }}" width="100%" height="400;">
+  </div>  
+  <div class="column">
+      <img src="{{ huis6 }}" width="100%" height="400;">
+  </div>
+</div>
+<div class="row2"> 
+<div class="column">
+    <h5>6 persoons bungalow B14</h5>
+    <p>•	vrijstaande bungalow<br>•	huisdieren toegestaan<br>• Prijs 241,- per week  </p>
+</div>
+<div class="column">
+    <h5>8 persoons bungalow F12</h5>
+    <p>•	luxe bungalow met whirlpool en sauna,<br>•	huisdieren toegestaan<br>• Prijs 296,- per week </p>
+</div>
+<div class="column">
+    <h5>8 persoons bungalow F38</h5>
+    <p>•	bijzonder mooie familiebungalow<br>•	huisdieren niet toegestaan<br>• Prijs 314,- per week </p>
+   </div>
+</div>
+<div class="row2"> 
+    <div class="column">
+         <a href="{{url_for('contact')}}">
+          <button>Reseveren</button>
+          </a>
+    </div>
+    <div class="column">
+        <a href="{{url_for('contact')}}">
+         <button>Reseveren</button>
+         </a>
+   </div>
+   <div class="column">
+        <a href="{{url_for('contact')}}">
+         <button>Reseveren</button>
+         </a>
+       </div>
+</div>
+{% endblock %}
